@@ -3,7 +3,7 @@
 #include <opencv2/opencv.hpp>
 #include <functional>
 
-#include "position.hpp"
+#include "../../../src/position.hpp"
 #include "ClickTranslator.hpp"
 
 

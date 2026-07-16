@@ -1,20 +1,20 @@
 #pragma once
 
 #include <optional>
-#include "position.hpp"
+#include "../../../src/position.hpp"
 
 class ClickTranslator {
 public:
     ClickTranslator(int rows,
-                    int cols,
-                    int cellSize,
-                    int offsetX = 0,
-                    int offsetY = 0)
-        : rows_(rows),
-          cols_(cols),
-          cellSize_(cellSize),
-          offsetX_(offsetX),
-          offsetY_(offsetY) {}
+                int cols,
+                int cellSize,
+                int offsetX = 0,
+                int offsetY = 0)
+    : rows_(rows),
+      cols_(cols),
+      cellSize_(cellSize),
+      offsetX_(offsetX),
+      offsetY_(offsetY) {}
 
     std::optional<Position> pixelToCell(int x, int y) const;
 
